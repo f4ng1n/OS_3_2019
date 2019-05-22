@@ -1,7 +1,7 @@
 # OS_3_2019
-# INTERACTION OF FLOWS THROUGH NOMINATED CHANNELS  
-# ВЗАИМОДЕЙСТВИЕ ПОТОКОВ ЧЕРЕЗ НЕИМЕНОВАННЫЕ КАНАЛЫ (TƯƠNG TÁC CỦA CÁC LUỒNG THÔNG QUA CÁC KÊNH KHÔNG ĐỊNH DANH)
-## Mục tiêu của bài:  Làm quen với các công cụ tương tác các luồng và tiến trình - bằng các kênh không định danh và với các lệnh hệ thống đảm bảo việc tạo, đóng kênh không định danh, cũng như truyền và nhận dữ liệu thông qua các kênh này.  
+# INTERACTION OF FLOWS THROUGH UNNAMED PIPE  
+# ВЗАИМОДЕЙСТВИЕ ПОТОКОВ ЧЕРЕЗ НЕИМЕНОВАННЫЕ КАНАЛЫ (TƯƠNG TÁC CỦA CÁC LUỒNG THÔNG QUA CÁC KÊNH VÔ DANH)
+## Mục tiêu của bài:  Làm quen với các công cụ tương tác các luồng và tiến trình - bằng các kênh vô danh và với các lệnh hệ thống đảm bảo việc tạo, đóng kênh vô danh, cũng như truyền và nhận dữ liệu thông qua các kênh này.  
 ## Lý thuyết tổng quát  
 - Một trong các công cụ tương tác process và thread gọi là các kênh vô danh. Kênh không chỉ đảm bảo truyền dữ liệu, mà còn hỗ trợ đồng bộ hóa các threads và processes. 
 - Đặc điểm của kênh là: "Khi cố gắng ghi dữ liệu vào một kênh đã đầy (full), thì tiến trình (process) bị chặn ngay. Tương tự, khi cố gắng đọc dữ liệu từ một kênh rỗng, thì process cũng bị chặn ngay".  **Свойствами канала являются следующие положения «при попытке записать данные в полный канал процесс блокируется» и «при попытке чтения данных из пустого канала процесс блокируется».**  
